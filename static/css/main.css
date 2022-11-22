@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+ header{
+	background-color:#f1f1f1;
+	padding:15px;
+}
+
+nav.menu {
+  float: left;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  word-wrap:break-word;
+}
+
+a:hover{
+	text-decoration:none;	
+}
+
+a:visited{
+	color:blue;
+}
+
+.menuitem:hover{
+	background-color:#00FF00;
+	cursor:pointer;	
+}
+
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+.inst-list{
+	list-style-type:none;
+}
+
+.inst-list li{
+	margin:5px;
+}
+
+.center{
+	text-align:center;
+}
+
+main {
+  float: left;
+  width: 60%;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+p{
+	font-size:20px;
+}
+
+footer{
+	background-color:#f1f1f1;
+	text-align:center;padding:10px;
+	margin-top:7px;
+	font-size:20px;
+}
+
+.active{
+	background-color:#87ceeb;
+}
+
+.italic{
+	font-style:italic;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Адаптирование документа под размер экрана */
+@media only screen and (max-width:620px) {
+  /* Планшеты */
+  main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width:550px) {
+  /* Смартфоны */
+  nav.menu, .main, .right {
+    width: 100%;
+  }
+}
+
